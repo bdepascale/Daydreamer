@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Socks',
     image: '/images/bikeSocks.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 1,
   },
   {
-    _id: '2',
     name: 'Jeans',
     image: '/images/blueJeans.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: '3',
     name: 'Long Sleeve Shirt',
     image: '/images/blueShirt.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: '4',
     name: 'Skirt',
     image: '/images/blueSkirt.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '5',
     name: 'Rose Hat',
     image: '/images/roseHat.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: '6',
     name: 'Swim Trunks',
     image: '/images/swimShorts.jpg',
     description:
