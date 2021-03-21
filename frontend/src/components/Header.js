@@ -1,4 +1,5 @@
 import React from 'react';
+import {LinkContainer} from 'react-router-bootstrap';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 /*  Navbar including login and shopping cart
@@ -8,22 +9,38 @@ const Header = () => {
     <header>
       <Navbar bg='success' variant='dark' expand='lg' collapseOnSelect>
         <Container>
-          <Navbar.Brand href='/'>Daydreamer</Navbar.Brand>
+          <LinkContainer to='/'>
+            <Navbar.Brand>Daydreamer</Navbar.Brand>
+          </LinkContainer>
+          
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
-              <Nav.Link href='/shoppingCart'>
-                <i className='fas fa-shopping-cart'></i> Shopping Cart
-              </Nav.Link>
-              <Nav.Link href='/login'>
-                <i className='fas fa-user'></i> Sign In / Register
-              </Nav.Link>
-              <Nav.Link href='/login'>
-                <i className='fas fa-contact'></i> Contact Us
-              </Nav.Link>
-              <Nav.Link href='/login'>
-                <i className='fas fa-mission'></i> Our Mission
-              </Nav.Link>
+              
+              <LinkContainer to='/shoppingCart'>
+                <Nav.Link>
+                  <i className='fas fa-shopping-cart'></i> Shopping Cart
+                </Nav.Link>
+              </LinkContainer>
+              
+              <LinkContainer to='/login'>
+                <Nav.Link>
+                  <i className='fas fa-user'></i> Sign In / Register
+                </Nav.Link>
+              </LinkContainer>
+
+              <LinkContainer to='/contact'>
+                <Nav.Link>
+                  <i className='fas fa-address-book'></i> Contact Us
+                </Nav.Link>
+              </LinkContainer>
+
+              <LinkContainer to='/mission'>
+                <Nav.Link>
+                  <i className='fas fa-info'></i> Our Mission
+                </Nav.Link>
+              </LinkContainer>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
