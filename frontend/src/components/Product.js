@@ -1,7 +1,7 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {Card} from 'react-bootstrap';
-import Rating from './Rating';
+import React from 'react'
+import {Link} from 'react-router-dom'
+import {Card} from 'react-bootstrap'
+import Rating from './Rating'
 
 //remove style={{width: '18rem'}} from Card container to space out the cards more
 const Product =({product}) => {

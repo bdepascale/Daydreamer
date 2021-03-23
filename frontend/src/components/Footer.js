@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React from 'react'
+import {Container, Row, Col} from 'react-bootstrap'
 
 //To hold links and footer info
 const Footer =() => {
@@ -10,7 +10,7 @@ const Footer =() => {
                     <Col className='text-center py-3'>
                         Daydreamer : Style Remade
                     </Col>
-                </Row>
+                </Row> 
             </Container>
         </footer>
     )

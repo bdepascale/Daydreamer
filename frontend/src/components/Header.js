@@ -1,6 +1,6 @@
-import React from 'react';
-import {LinkContainer} from 'react-router-bootstrap';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import React from 'react'
+import {LinkContainer} from 'react-router-bootstrap'
+import {Container, Navbar, Nav} from 'react-bootstrap'
 
 /*  Navbar including login and shopping cart
     Navbar from https://react-bootstrap.github.io/components/navbar/ */
@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <Navbar bg='success' variant='dark' expand='lg' collapseOnSelect>
         <Container>
-          <LinkContainer to='/'>
+        <LinkContainer to='/'>
             <Navbar.Brand>Daydreamer</Navbar.Brand>
           </LinkContainer>
           
