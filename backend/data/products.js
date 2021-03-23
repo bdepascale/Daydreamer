@@ -18,7 +18,7 @@ const products = [
       'Stylish jeans using recycled fabric with designer tears & highlights',
     brand: 'DayDreamer',
     category: 'Clothing',
-    price: 75.0,
+    price: 75.00,
     countInStock: 5,
     rating: 4.0,
     numReviews: 2,
@@ -71,6 +71,6 @@ const products = [
     rating: 3.5,
     numReviews: 6,
   },
-];
+]
 
-export default products;
+export default products
