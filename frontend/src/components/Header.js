@@ -1,6 +1,7 @@
 import React from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Container, Navbar, Nav} from 'react-bootstrap'
+import {Container, Navbar, Nav, Image} from 'react-bootstrap'
+import logo from './logo.JPG'
 
 /*  Navbar including login and shopping cart
     Navbar from https://react-bootstrap.github.io/components/navbar/ */
@@ -10,7 +11,7 @@ const Header = () => {
       <Navbar bg='success' variant='dark' expand='lg' collapseOnSelect>
         <Container>
         <LinkContainer to='/'>
-            <Navbar.Brand>Daydreamer</Navbar.Brand>
+            <Navbar.Brand><img width='100px' height='auto' src={logo}></img> Daydreamer</Navbar.Brand>
           </LinkContainer>
           
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
