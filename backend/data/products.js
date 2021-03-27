@@ -18,7 +18,7 @@ const products = [
       'A little more exciitng than jorts. Made from recycled denim and fabric.',
     brand: 'DayDreamer',
     category: 'Shorts',
-    price: 14.99,
+    price: 24.99,
     countInStock: 3,
     rating: 4.5,
     numReviews: 6,
@@ -35,12 +35,12 @@ const products = [
     rating: 0.0,
     numReviews: 0,
   },  {
-    name: 'Socks',
+    name: 'Drawstring Shorts',
     image: '/images/shortsDrawstring.png',
     description:
       'To be comfy or to be stylish. Don\'t choose. Made from recycled shorts and fabric scraps.',
     brand: 'DayDreamer',
-    category: 'Clothing',
+    category: 'Shorts',
     price: 19.99,
     countInStock: 50,
     rating: 2.5,
