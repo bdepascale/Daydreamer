@@ -1,5 +1,52 @@
 const products = [
   {
+    name: 'Sheer Tank Top',
+    image: '/images/tankTop.png',
+    description:
+      'For when a shirt is too hot but you have to wear one. Made from curtains.',
+    brand: 'DayDreamer',
+    category: 'Shirts',
+    price: 19.99,
+    countInStock: 6,
+    rating: 5.0,
+    numReviews: 1,
+  },
+  {
+    name: 'Patchwork Denim Shorts',
+    image: '/images/shortsPatchwork.png',
+    description:
+      'A little more exciitng than jorts. Made from recycled denim and fabric.',
+    brand: 'DayDreamer',
+    category: 'Shorts',
+    price: 14.99,
+    countInStock: 3,
+    rating: 4.5,
+    numReviews: 6,
+  },
+  {
+    name: 'Two-tone Croptop',
+    image: '/images/cropTop.png',
+    description:
+      'Because one color is never enough. Made from recycled shirts and fabric scraps',
+    brand: 'DayDreamer',
+    category: 'Shirts',
+    price: 19.99,
+    countInStock: 0,
+    rating: 0.0,
+    numReviews: 0,
+  },  {
+    name: 'Socks',
+    image: '/images/shortsDrawstring.png',
+    description:
+      'To be comfy or to be stylish. Don\'t choose. Made from recycled shorts and fabric scraps.',
+    brand: 'DayDreamer',
+    category: 'Clothing',
+    price: 19.99,
+    countInStock: 50,
+    rating: 2.5,
+    numReviews: 3,
+  },
+  {
     name: 'Socks',
     image: '/images/bikeSocks.jpg',
     description:
