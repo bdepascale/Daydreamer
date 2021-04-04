@@ -14,3 +14,7 @@ h3 {
 .navbar-default {
     background-image: linear-gradient(to bottom,#4a5d23 0,#4a5d23 100%) !important; /* override background image gradient w/ flat color */
 }
+.missionContainer{
+    padding: 18px;
+    color: black;
+}
