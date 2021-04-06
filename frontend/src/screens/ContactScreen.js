@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactScreen = () => {
     return (
-        <div >
+        <div>
             <h1>Contact Us</h1>
             <p>If you have questions, comments, or would like to donate material, please don't hesitate to contact us using the form below</p>
 

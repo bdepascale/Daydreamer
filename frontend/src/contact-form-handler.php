@@ -8,7 +8,7 @@ $message = $_POST['message'];
 // replace site email with heroku webserver email
 $email_from = 'server email';
 
-$email_subject = $subject;
+$email_subject = "$subject";
 
 $email_body = "User Name: $name. \n".
                 "User Email: $visitor_email.\n".
