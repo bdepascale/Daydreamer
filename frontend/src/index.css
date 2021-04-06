@@ -1,20 +1,43 @@
 main {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
 h3 {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .rating span {
-    margin: 0.1rem;
+  margin: 0.1rem;
 }
 
 .navbar,
 .navbar-default {
-    background-image: linear-gradient(to bottom,#4a5d23 0,#4a5d23 100%) !important; /* override background image gradient w/ flat color */
+  background-image: linear-gradient(to bottom, #4a5d23 0, #4a5d23 100%) !important; /* override background image gradient w/ flat color */
 }
-.missionContainer{
-    padding: 18px;
-    color: black;
+.missionContainer {
+  padding: 18px;
+  color: black;
+}
+form {
+  margin-top: 10%;
+  transition: all 4s ease-in-out;
+}
+#contact-name, #contact-email, #contact-subject, #contact-message, #contact-submit {
+  margin: 5px;
+  width: 600px;
+  background: white;
+  border: 1px solid black;
+  outline: none;
+}
+#contact-submit {
+  width: fit-content;
+  font-weight: bold;
+}
+.contact-form {
+  margin-left: 10%;
+}
+
+#contact-submit:hover{
+background-color: #4a5d23;
+color: white;
 }
