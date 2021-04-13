@@ -8,17 +8,30 @@ import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
 import MissionScreen from './screens/MissionScreen'
 import ContactScreen from './screens/ContactScreen'
+import LoginScreen from './screens/LoginScreen'
+import RegisterScreen from './screens/RegisterScreen'
+import ProfileScreen from './screens/ProfileScreen'
+import ShippingScreen from './screens/ShippingScreen'
+import PaymentScreen from './screens/PaymentScreen'
+import PlaceOrderScreen from './screens/PlaceOrderScreen'
+
 const App =() => {
   return (
     <Router>
       <Header></Header>
       <main className='py-3'>
         <Container>
-          <Route path='/' component={HomeScreen} exact></Route>
+          <Route path='/shipping' component={ShippingScreen}></Route>
+          <Route path='/payment' component={PaymentScreen}></Route>
+          <Route path='/placeorder' component={PlaceOrderScreen}></Route>
+          <Route path='/login' component={LoginScreen}></Route>
+          <Route path='/register' component={RegisterScreen}></Route>
+          <Route path='/profile' component={ProfileScreen}></Route>
           <Route path='/product/:id' component={ProductScreen}></Route>
           <Route path='/shoppingCart/:id?' component={CartScreen}></Route>
           <Route path='/mission/:id?' component={MissionScreen}></Route>
           <Route path='/contact/:id?' component={ContactScreen}></Route>
+          <Route path='/' component={HomeScreen} exact></Route>
         </Container>
       </main>
       <Footer></Footer>
