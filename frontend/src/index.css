@@ -12,14 +12,15 @@ h3 {
 
 .navbar,
 .navbar-default {
-  background-image: linear-gradient(to bottom, #4a5d23 0, #4a5d23 100%) !important; /* override background image gradient w/ flat color */
+  background-image: linear-gradient(to bottom, #4a5d23 0, #4a5d23 100%) !important; 
 }
 .missionContainer {
   padding: 18px;
   color: black;
 }
 form {
-  margin-top: 10%;
+  display: inline-block;
+  margin-top: 5%;
   transition: all 4s ease-in-out;
 }
 #contact-name, #contact-email, #contact-subject, #contact-message, #contact-submit {
@@ -33,11 +34,20 @@ form {
   width: fit-content;
   font-weight: bold;
 }
-.contact-form {
-  margin-left: 10%;
+.contact-body {
+  text-align: center;
 }
 
 #contact-submit:hover{
 background-color: #4a5d23;
 color: white;
+}
+.message-sent-body{
+  color: black;
+  text-align: center;
+  margin: 25%;
+}
+#continue-shopping{
+  background-color:#4a5d23;
+  color: white;
 }

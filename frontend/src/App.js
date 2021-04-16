@@ -14,6 +14,7 @@ import ProfileScreen from './screens/ProfileScreen'
 import ShippingScreen from './screens/ShippingScreen'
 import PaymentScreen from './screens/PaymentScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
+import MessageSent from './screens/MessageSent'
 
 const App =() => {
   return (
@@ -32,6 +33,7 @@ const App =() => {
           <Route path='/mission/:id?' component={MissionScreen}></Route>
           <Route path='/contact/:id?' component={ContactScreen}></Route>
           <Route path='/' component={HomeScreen} exact></Route>
+          <Route path='/MessageSent' component={MessageSent}></Route>
         </Container>
       </main>
       <Footer></Footer>
