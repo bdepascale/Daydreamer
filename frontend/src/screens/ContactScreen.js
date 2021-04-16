@@ -8,6 +8,8 @@ const ContactScreen = () => {
 
             <div class="contact-body">
                 <form id="contact-form" method="post" action="contact-form-handler.php">
+
+  
                     <input name="name" id="contact-name" type="text" class="form-control" placeholder="Your Name" required></input>
                     <input name="email" id="contact-email" type="email" class="form-control" placeholder="Your e-mail" required></input>
                     <input name="subject" id="contact-subject" type="text" class="form-control" placeholder="Subject" required></input>
