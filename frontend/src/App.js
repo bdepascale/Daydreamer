@@ -15,6 +15,7 @@ import ShippingScreen from './screens/ShippingScreen'
 import PaymentScreen from './screens/PaymentScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
 import MessageSent from './screens/MessageSent'
+import OrderPlaced from './screens/OrderPlaced'
 
 const App =() => {
   return (
@@ -34,6 +35,7 @@ const App =() => {
           <Route path='/contact/:id?' component={ContactScreen}></Route>
           <Route path='/' component={HomeScreen} exact></Route>
           <Route path='/MessageSent' component={MessageSent}></Route>
+          <Route path='/orderplaced' component={OrderPlaced}></Route>
         </Container>
       </main>
       <Footer></Footer>
