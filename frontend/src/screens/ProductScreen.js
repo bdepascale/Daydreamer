@@ -7,6 +7,13 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import {listProductDetails} from '../actions/productActions'
 import {addToCart} from '../actions/cartActions'
+import scannerBeep from '../audioclips/zapsplat_public_places_supermarket_checkout_beep_002_44357.mp3'
+import addedToCart from '../audioclips/addedToCart.mp3'
+import {Howl} from 'howler'
+
+const sound = new Howl({
+    src: [scannerBeep]
+})
 
 const ProductScreen = ({ history, match}) => {
     const [qty, setQty] = useState(1)
@@ -22,6 +29,7 @@ const ProductScreen = ({ history, match}) => {
     const addToCartHandler = () => {
         //dispatch(addToCart(product._id, qty))
         //history.push(`/cart/${match.params.id}?qty=${qty}`)
+        sound.play()
         let currentCart;
         try{
             currentCart = JSON.parse(localStorage.getItem('cart'));
