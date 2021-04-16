@@ -3,10 +3,12 @@ import {LinkContainer} from 'react-router-bootstrap'
 import {Container, Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {logout} from '../actions/userActions'
+import {Route} from 'react-router-dom'
+import SearchBar from '../components/SearchBar'
 
 /*  Navbar including login and shopping cart
     Navbar from https://react-bootstrap.github.io/components/navbar/ */
-const Header = () => {
+const Header = () => {  
   const dispatch = useDispatch()
   
   const userLogin=useSelector(state => state.userLogin)
@@ -32,9 +34,9 @@ const Header = () => {
               />
             </Navbar.Brand>
           </LinkContainer>
-          
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
+          <Route render={({ history }) => <SearchBar history={history} />} />
             <Nav className='ml-auto'>
               <LinkContainer to='/shoppingCart'>
                 <Nav.Link>
