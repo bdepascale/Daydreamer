@@ -53,7 +53,7 @@ const PlaceOrderScreen = () => {
                                                 <Col>
                                                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                                                 </Col>
-                                                <Col md={4}>{item.qty} x ${item.price} = {item.qty * item.price}</Col>
+                                                <Col md={4}>{item.qty} x ${item.price} = ${(item.qty * item.price).toFixed(2)}</Col>
                                             </Row>
 
                                         </ListGroup.Item>
@@ -96,9 +96,9 @@ const PlaceOrderScreen = () => {
                                         <Col>${cartItems.reduce((acc, currItem) => (Number(acc) + Number(currItem.qty) * Number(currItem.price) *0.07) + (Number(acc) + Number(currItem.qty) * Number(currItem.price)), 0).toFixed(2)}</Col>
                                     </Row>
                                 </ListGroup.Item>
-                                <ListGroup.Item>
-                                    <Button type='button' className='btn-block' disabled={cartItems === 0} onClick={placeOrderHandler}>Place Order</Button>
-                                </ListGroup.Item>
+                                <form id="order-form"  action="/orderplaced">
+                                    <input type="submit" id ="order-submit" class="form-control" value="Place Order"></input>
+                                </form>
                         </ListGroup>
                     </Card>
                 )}
