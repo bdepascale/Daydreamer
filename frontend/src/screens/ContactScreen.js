@@ -7,7 +7,7 @@ const ContactScreen = () => {
             <p>If you have questions, comments, or would like to donate material, please don't hesitate to contact us using the form below</p>
 
             <div class="contact-form">
-                <form id="contact-form" method="post" action="contact-form-handler.php">
+                <form id="contact-form"  action="/MessageSent">
                     <input name="name" id="contact-name" type="text" class="form-control" placeholder="Your Name" required></input>
                     <input name="email" id="contact-email" type="email" class="form-control" placeholder="Your e-mail" required></input>
                     <input name="subject" id="contact-subject" type="text" class="form-control" placeholder="Subject" required></input>
