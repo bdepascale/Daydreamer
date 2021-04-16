@@ -12,24 +12,55 @@ h3 {
 
 .navbar,
 .navbar-default {
-  background-image: linear-gradient(to bottom, #4a5d23 0, #4a5d23 100%) !important; 
+  background-image: linear-gradient(
+    to bottom,
+    #4a5d23 0,
+    #4a5d23 100%
+  ) !important;
 }
 .missionContainer {
   padding: 18px;
   color: black;
 }
-form {
+#contact-form {
   display: inline-block;
   margin-top: 5%;
   transition: all 4s ease-in-out;
 }
-#contact-name, #contact-email, #contact-subject, #contact-message, #contact-submit {
+#contact-name,
+#contact-email,
+#contact-subject,
+#contact-message,
+#contact-submit {
   margin: 5px;
   width: 600px;
   background: white;
   border: 1px solid black;
   outline: none;
 }
+
+#order-form {
+  display: inline-block;
+  margin: 5%;
+  margin-left: 3%;
+  transition: all 4s ease-in-out;
+}
+
+#order-submit {
+  margin: 5px;
+  width: 100%;
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  outline: none;
+  font-weight: bold;
+}
+
+#order-submit:hover {
+  background-color: #4a5d23;
+  color: white;
+}
+
 #contact-submit {
   width: fit-content;
   font-weight: bold;
@@ -38,16 +69,16 @@ form {
   text-align: center;
 }
 
-#contact-submit:hover{
-background-color: #4a5d23;
-color: white;
+#contact-submit:hover {
+  background-color: #4a5d23;
+  color: white;
 }
-.message-sent-body{
+.message-sent-body {
   color: black;
   text-align: center;
   margin: 25%;
 }
-#continue-shopping{
-  background-color:#4a5d23;
+#continue-shopping {
+  background-color: #4a5d23;
   color: white;
 }
