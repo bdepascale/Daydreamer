@@ -22,15 +22,15 @@ Team 2 - DreamTeam
 
 ### `git clone <URL>`
 
-First git clone the repository onto your local machine using the git clone command and the URL provided in this repository
+Clone the repository onto your local machine using the git clone command and the URL provided in this repository.
 
 ### `npm install`
 
-To install all of the APIs and dependencies. Use this command in the root folder as well as the frontend folder. This is because we separated the front and backend into two different folders for better
+To install all of the packages and dependencies. Use this command in the root folder as well as on the frontend folder.
 
 ### `npm run dev`
  
-To run the frontend and backend servers concurrently, use this command. localhost:3000 will display the UI of the website while localhost:5000 will display whether the backend is running properly or not.
+To run the frontend and backend servers concurrently, use this command. localhost:3000 will display the frontend. localhost:5000 will display whether the backend is running properly.
 
 ## Software Architecture
 This shows the planned architecture followed when developing this project.
