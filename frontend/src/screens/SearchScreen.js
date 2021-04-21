@@ -11,7 +11,7 @@ const SearchScreen = ({match}) => {
   const keyword = match.params.keyword
   const dispatch = useDispatch()
 
-  const productList =useSelector(state => state.productList)
+  const productList = useSelector(state => state.productList)
   const {loading, error, products} = productList
 
   useEffect(() => {
@@ -20,7 +20,6 @@ const SearchScreen = ({match}) => {
 
   return (
       <>
-        <h1>Searched Products</h1>
         {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> :
         <Row>
           {products.map((product) => (

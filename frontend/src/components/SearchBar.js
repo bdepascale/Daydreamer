@@ -6,9 +6,9 @@ const SearchBar = ({ history }) => {
 
   const submitHandler = (e) => {
     if (keyword.trim()) {
-      history.push(`/search/${keyword}`)
+      history.push(`/${keyword}`)
     } else {
-      history.push('/search')
+      history.push('/')
     }
   }
 
