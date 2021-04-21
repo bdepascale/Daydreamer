@@ -20,6 +20,7 @@ const SearchScreen = ({match}) => {
 
   return (
       <>
+        <h1>Search Results</h1>
         {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> :
         <Row>
           {products.map((product) => (
