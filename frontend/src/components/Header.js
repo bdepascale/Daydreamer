@@ -5,6 +5,7 @@ import {Container, Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {logout} from '../actions/userActions'
 import SearchBar from './SearchBar'
+import logo from '../images/logo.png'
 
 /*  Navbar including login and shopping cart
     Navbar from https://react-bootstrap.github.io/components/navbar/ */
@@ -26,11 +27,10 @@ const Header = () => {
             <Navbar.Brand>
               Daydreamer{' '}
               <img
-                src="./images/logo.png"
+                src={logo}
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
-                alt="DayDreamer logo"
               />
             </Navbar.Brand>
           </LinkContainer>
