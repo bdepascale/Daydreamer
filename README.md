@@ -1,6 +1,8 @@
 # Daydreamer
 
-CEN-3031 Software Eng Spring 2021
+CEN3031 Software Engineering Spring 2021
+
+Team 2 - DreamTeam
 
 ## Dependencies
 * Axios
@@ -31,7 +33,7 @@ To install all of the APIs and dependencies. Use this command in the root folder
 To run the frontend and backend servers concurrently, use this command. localhost:3000 will display the UI of the website while localhost:5000 will display whether the backend is running properly or not.
 
 ## Software Architecture
-This shows the planned architecture followed when developing this project
+This shows the planned architecture followed when developing this project.
 
 ### root
 Here we have the circle.ci pipeline process engine as well as the frontend and backend of the website.
